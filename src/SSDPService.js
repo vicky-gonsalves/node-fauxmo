@@ -21,7 +21,7 @@ let response = function(ipaddr) {
 			'CACHE-CONTROL: max-age=86400',
 			'DATE: ' + moment.utc(new Date()).format("ddd, DD MMM YYYY HH:mm:ss") + ' GMT',
 			'EXT:',
-			'LOCATION: http://' + ipaddr + ':' + devices[i].port + '/setup.xml',
+			'LOCATION: http://192.168.0.164:' + devices[i].port + '/setup.xml',
 			'OPT: "http://schemas.upnp.org/upnp/1/0/"; ns=01',
 			'01-NLS: ' + serial(devices[i]) + '',
 			'SERVER: Unspecified, UPnP/1.0, Unspecified',
